@@ -1,0 +1,332 @@
+/*Sin márgenes */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+[class*="col"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.container-fluid {
+  padding: 0px;
+}
+/*LETRAS*/
+/**/
+h1{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 35px;
+}
+
+h2{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+h5{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+/*Fondo*/
+.backgroundPic{
+  background-image: linear-gradient(rgba(251,194,235, 0.4), rgba(166,193,238, 0.45)), url("src/img/background1.jpeg"); 
+  background-size: cover;
+  background-position: top; 
+  width: 100%;
+  height: 50em;
+  
+}
+/*MENÚ*/
+/*Logo menú*/
+.logoCaroMenu{
+  width: 50px;
+  height: 50px;
+  margin-left: 15%;
+}
+.navbar{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 22px;
+  padding: 3vh;
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+.navbar-toggler{
+  border: none;
+  margin-right: 3%;
+}
+
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+}
+/*HEADER*/
+header{
+  padding: 8vh;
+}
+
+/*logo Carolina*/
+.logoCarolina{
+  text-align: center;
+  width: 18em;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+}
+
+/*Título*/
+.titleHeader{
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+/*Párrafo 1*/
+.textHeader1{
+  text-align: justify;
+  margin-bottom: 3vh;
+}
+
+/*Párrafo 2*/
+.textHeader2{
+  text-align: center;
+}
+
+/*PORTAFOLIO en INICIO*/
+
+#titlePortfolio{
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  text-align: center;
+}
+.project{
+  padding: 8vh;
+}
+.contentProject{
+  display: inline-block;
+  margin: 8vh;
+  align-content: center;
+}
+/*Foto proyecto*/ 
+.imgProject{
+  width: 55vh;
+  height: auto;
+}
+
+/*Foto proyecto hover*/
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+/*botón*/
+.btn-primary{
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  width: 20vh;
+  border-radius: 40px;
+  letter-spacing: 1px;
+}
+
+/**/
+/*Contacto*/
+.contact{
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  text-align: center;
+}
+.titleContact{
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.subtitleContact{
+  display: inline-block;
+  margin-bottom: 3vh;
+}
+.searchMe{
+  margin-top: 5vh;
+}
+.fab{
+  display: inline-block;
+  font-size: 6vh;
+}
+
+/*Copyright*/
+.copyright{
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  padding: 3vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 425px) { 
+  /*logo*/
+  .logoCarolina{
+   width: 22em;
+   align-content: center;
+  }
+  /*background*/
+  .backgroundPic{
+    height: 45em;
+  }
+  /*title*/
+  .project{
+    text-align: center;
+    padding: 4vh;
+  }
+  #titlePortfolio{
+    margin-bottom: 2vh;
+  }
+  /*imagen portafolio*/
+  .imgProject{
+    width: 60vh;
+    height: auto;
+  
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  header{
+    text-align: center;
+  }
+  .logoCarolina{
+    width: 25em;
+  }
+  .navbar-toggler{
+    margin-right: 5%;
+  }
+
+  .portfolio{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+   
+  }
+  #titlePortfolio{
+    margin-bottom: 6vh;
+  }
+
+  .contentProject{
+    margin-top: -2vh;
+  }
+
+  .contact{
+    padding: 5vh;
+  }
+  .titleContact{
+    margin-bottom: 6vh;
+  }
+  .textHeader1{
+    text-align: center;
+  }
+
+   
+
+ }
+
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1024px) { 
+  .textHeader1{
+    text-align: center;
+  }
+  header{
+    padding: 10vh;
+  }
+  .logoCarolina{
+    margin-top: 10vh;
+  }
+  .backgroundPic{
+    height: 40em;
+  }
+
+  .imgProject{
+    width:70vh;
+    height: auto;
+  }
+
+  .fab{
+    display: inline-block;
+    font-size: 8vh;
+  }
+   
+ }
